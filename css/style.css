@@ -1,0 +1,228 @@
+html * {
+	box-sizing: border-box;
+}
+body {
+	-webkit-text-size-adjust: 100%;/* iPhoneなどのフォントサイズ指定バグ回避 */
+		background-color: #c0c0c0;
+}
+.wrapper {
+	margin: 0 auto;
+	max-width: 90%;
+	min-height: 100vh; /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
+	position: relative;/* ←相対位置 */
+}
+p {
+	line-height: 1.5;
+}
+a {
+	text-decoration: none;
+}
+.uname,.passwd,.repasswd {
+	background-color: darkgray;
+}
+/* ボタン汎用 */
+.btn {
+	display: block;
+	width: 193px;
+	height: 30px;
+	margin: 20px auto 0;
+	border: none;
+	border-radius: 5px;
+	color: white;
+}
+.heading {
+	margin-top: 100px;
+}
+.logo {
+	font-size: 16px;
+	text-align: center;
+}
+.description {
+	font-size: 16px;
+	text-align: center;
+}
+.heading {
+	text-align: center;
+}
+.error {
+	color: red;
+}
+.loginForm {
+	margin: 50px auto 0;
+	text-align: center;
+}
+.loginForm input {
+	margin-bottom: 25px;
+}
+.button {
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+.login {
+	background-color: #42A5F5;
+}
+.return {
+	color: black;
+	/* background-color: azure; */
+}
+.registerArea {
+	text-align: center;
+}
+.registerDone {
+	margin: 150px auto 0;
+	text-align: center;
+}
+.returnTop {
+	margin-top: 30px;
+	text-align: center;
+}
+.nputArea {
+	background: #444;
+}
+.input-task {
+	border: 1px solid black;
+	margin: 100px auto;
+	background: #444;
+}
+.input-box,.display-task {
+	width: 100%;
+}
+.input-box {
+	border-radius: 3px;
+	background: #444;
+	color: white;
+}
+::placeholder {
+	color: white;
+}
+.input-limit {
+	background: #444;
+	color: white;
+}
+.inputs {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.display-task {
+	background: #444;
+	color: white;
+}
+.logoutArea {
+	text-align: center;
+	margin-top: 100px;
+}
+footer{
+		width: 100%;
+}
+.unsubscrib {
+	text-align: center;
+}
+.descriptionArea {
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+}
+.txt {
+	text-align: left;
+	display: inline-block;
+}
+.dc {
+	border-bottom: 1px solid black;
+}
+.sc {
+	margin-top: 50px;
+}
+.sc1 {
+	color: red;
+}
+/* form {
+	margin-block-end: 0;
+} */
+.pinline {
+	/* width: 40%; */
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+.submit {
+	background: #66CCFF;
+	margin-left: auto;
+	margin-right: 5px;
+}
+.done {
+	margin-left: auto;
+	margin-right: 5px;
+	background: #FF6347;
+}
+.outFlex {
+	display: flex;
+	flex-wrap: wrap;
+}
+.newOutputs {
+	margin-bottom: 15px;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	background: #444;
+	color: white;
+}
+.unsub {
+	background: #A9A9A9;
+}
+/* レスポンシブ */
+
+/* 481px以上に適用されるCSS（タブレット用） */
+@media screen and (min-width: 481px) {
+		/* .newOutputs .display-task {
+		width: 71%;
+	} */
+	.outputs,.newOutputs {
+		display: flex;
+		justify-content: space-between;
+	}
+	.outFlex {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	background: #444;
+	color: white;
+}
+.pinline {
+	width: 40%;
+}
+
+}
+/* 960px以上に適用されるCSS（PC用） */
+@media screen and (min-width: 960px) {
+	.wrapper {
+		max-width: 940px;
+		margin: 0 auto;
+	}
+	.newOutputs .display-task {
+		width: 100%;
+	}
+	.inputs {
+		flex-wrap: nowrap;
+	}
+	.input-task {
+		width: 60%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.outputs,.newOutputs {
+		display: flex;
+		justify-content: space-between;
+	}
+	.outFlex {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	background: #444;
+	color: white;
+}
+.pinline {
+	width: 40%;
+}
+}
