@@ -7,8 +7,19 @@
 職業訓練校で学んだスキルを活かしたいと考え、制作しました。  
 私生活やビジネスシーンでの、「結局やらず仕舞いに終わってしまう」のを防ぐことを目的としています。  
 
+# 使い方
+## トップページ
+
+
 # 使用言語
 - HTML/CSS  
 - JavaScript
 - PHP 7.4
 - MySQL 5.7
+
+# データベース
+loginテーブル  
+![スクリーンショット 2021-06-24 11 47 25](https://user-images.githubusercontent.com/86467534/124408147-9200a400-dd80-11eb-9249-3d4e1dd7d966.png)  
+
+tasklistテーブル  
+![スクリーンショット 2021-06-24 13 47 27](https://user-images.githubusercontent.com/86467534/124408264-cc6a4100-dd80-11eb-9392-d52fdfac03e4.png)
